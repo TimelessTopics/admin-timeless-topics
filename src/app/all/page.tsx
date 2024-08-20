@@ -5,16 +5,16 @@ import Link from 'next/link';
 import React from 'react'
 
 const page = async () => {
-    const baseUrl = "https://admin-timeless-topics.vercel.app"
-    console.log(baseUrl);
+    // const baseUrl = "https://admin-timeless-topics.vercel.app"
+    // console.log(baseUrl);
 
-    const res = await fetch(`${baseUrl}/api/blog`, {
-        headers: {
-            "Content-Type": "application/json"
-        }
-    })
-    const data = await res.json()
-    const allPosts = data.allPosts as unknown as TestBlog[]
+    // const res = await fetch(`${baseUrl}/api/blog`, {
+    //     headers: {
+    //         "Content-Type": "application/json"
+    //     }
+    // })
+    // const data = await res.json()
+    // const allPosts = data.allPosts as unknown as TestBlog[]
 
     return (
         <Container>
@@ -23,7 +23,7 @@ const page = async () => {
                     Add
                 </Link>
             </div>
-            <AllBlogsTable blogs={allPosts} />
+            {/* <AllBlogsTable blogs={allPosts} /> */}
         </Container>
     )
 }
