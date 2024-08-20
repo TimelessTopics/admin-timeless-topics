@@ -5,7 +5,7 @@ import Link from 'next/link';
 import React from 'react'
 
 const page = async () => {
-    const baseUrl = process.env.BASE_URL!
+    const baseUrl = "https://admin-timeless-topics.vercel.app"
     console.log(baseUrl);
 
     const res = await fetch(`${baseUrl}/api/blog`, {
